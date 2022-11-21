@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowToBurguer - Contacto</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- LINK FUENTE DE TARJETA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<body>
+<!-- FONDO DE PANTALLA VIDEO -->
+    <div class="videobg">
+        <video onloadeddata="this.muted=true" autoplay loop>
+            <source src="../img/video.mp4"></source>
+        </video>
+    </div>
+<!-- BOTONES -->
+    <div class="menu">
+        <a href="../html/index.html" class="btn">Home</a>
+        <a href="../html/ingredientes.html" class="btn">Ingredientes</a>
+        <a href="../html/pasos.html" class="btn">Pasos</a>
+        <a href="../html/contacto.html" class="btn">Contacto</a>
+    </div>
+<!-- BOX CONTACTO-->
+<section class="boxc">
+    <h1>Contacto</h1>
+    <p>¿Necesitas ayuda?</p>
+    <form>
+        <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="off">           
+        <input type="text" name="fullname" id="fullname" placeholder="Apellidos" autocomplete="off">           
+        <input type="email" required="true" name="email" id="email" placeholder="Email" autocomplete="off">
+        <div class="box">
+                <input type="radio" name="contact" id="correcciones">
+                <label for="proposito-consulta">Correcciones</label>
+                <input type="radio" name="contact" id="sugerencias">
+                <label for="sugerencias">Sugerencias</label>
+        </div>
+        <textarea name="message" id="message" placeholder="Comentario" cols="65" rows="8"></textarea>
+        <div class="condiciones">
+            <input type="checkbox" name="condiciones" id="condiciones">
+            <label for="condiciones">Acepto la políticas de privacidad</label>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+</body>
+</html>
